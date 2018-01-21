@@ -1,0 +1,32 @@
+{
+  "name": "astronode-adapter",
+  "version": "1.0.0",
+  "description": "Module with adapter interfaces to astronode",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config config.jest.json --coverage",
+    "lint": "eslint --config .eslintrc lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monumentum/astronode-adapter.git"
+  },
+  "keywords": [
+    "jest",
+    "es6",
+    "adapter",
+    "interface",
+    "astronode",
+    "astrostack"
+  ],
+  "author": "Guilherme Diego <guilherme@monumentum.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monumentum/astronode-adapter/issues"
+  },
+  "homepage": "https://github.com/monumentum/astronode-adapter#readme",
+  "devDependencies": {
+    "jest": "^22.1.4",
+    "eslint": "^4.16.0"
+  }
+}

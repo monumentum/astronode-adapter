@@ -1,0 +1,20 @@
+{
+    "roots": [
+      "lib"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "coveragePathIgnorePatterns": [
+        "<rootDir>/node_modules/"
+    ],
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ],
+    "coverageReporters": [
+      "html",
+      "lcov"
+    ]
+}
