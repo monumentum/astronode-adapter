@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --config config.jest.json --coverage",
-    "lint": "eslint --config .eslintrc lib"
+    "lint": "eslint --config .eslintrc lib",
+    "lint:fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
