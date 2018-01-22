@@ -1,14 +1,17 @@
-# language: node_js
-# node_js:
-#   - "6"
-#   - "7"
-#   - "8"
-# install:
-#   - npm install
-# scripts:
-#   - npm run test
-#   - npm run lint
-# after_success:
-#   - npm run coverall
-# deploy:
-#   provider: npm
+language: node_js
+node_js:
+- '7'
+- '8'
+cache:
+  directories:
+  - node_modules
+script:
+  - npm run test
+  - npm run lint
+after_success:
+  - npm run coveralls
+deploy:
+  provider: npm
+  email: dev@monumentum.io
+  api_key:
+    secure: OPPh9Ci11dC5F96AEtUmoIKKCveeIGnxAsz1DEllUM/8PD27+2e5YFE8+evMZ8bNl5prg13xZWxf8wQztsy/j+aGbckHuy8gF8kj1BR2vPpb2xXWHfqICq9fR4PlXozA+q1+dhE94muCbHZ152CegjVcAV5YQmGAynvJYWUmrdw9RdCs0Wru+FTwTpWfBxLOTrlK6vuu7omuPpZbe5au3d35Amsb3D1KkrdRPdDm8YbP+LqXnZK9jK67rsFoLWGiZpIwQ9MHp6NO4o2GY8pKykvzMKBeAei+SmX9tPgKV425NsVRWA0wjfI039YG1CxAHHoZ1Qr+8nPTI9O1toP9sDamxi0O13V7t2KoT+isLF4qAESL+AJIvLTZVdumNaqAfwZ8XgPfCKrYc+y15o48jdhIQuDeuAd8vlugEjnBAP+py68xOfXF0Wnk5bOugyfbK2qMcbgklKXaFEdCE/kV/ErxcPcFfTtPVdo4OVJxoDYJjCM4NOYhaAEHxXongJ59dhvHE/4JTLNoXOLws2CbKtdcPWPWpmnHP30qL2H5g1DcRhgAWIszI2W1wriqFgwGCwHkTA7E41J88iuTh/d0yZ4XDhSM6yjmatw8Gzp9l4+I9gTVx1tjcroHK1QrPipEcIMCDySEHuOsvuC9BLEXjp3HCYKPk99vQiQHArnKtt4=

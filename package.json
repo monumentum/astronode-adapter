@@ -1,16 +1,18 @@
 {
-  "name": "astronode-adapter",
+  "name": "astronode-plugin",
   "version": "1.0.0",
-  "description": "Module with adapter interfaces to astronode",
+  "description": "Module with plugin interfaces and parsers to astronode",
   "main": "index.js",
   "scripts": {
     "test": "jest --config config.jest.json --coverage",
-    "lint": "eslint --config .eslintrc lib",
-    "lint:fix": "npm run lint -- --fix"
+    "test:dev": "jest --config config.jest.json --watch",
+    "lint": "eslint --config .eslintrc src",
+    "lint:fix": "eslint --config .eslintrc src --fix",
+    "coveralls": "cat coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/monumentum/astronode-adapter.git"
+    "url": "git+https://github.com/monumentum/astronode-plugin.git"
   },
   "keywords": [
     "jest",
@@ -23,12 +25,13 @@
   "author": "Guilherme Diego <guilherme@monumentum.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/monumentum/astronode-adapter/issues"
+    "url": "https://github.com/monumentum/astronode-plugin/issues"
   },
-  "homepage": "https://github.com/monumentum/astronode-adapter#readme",
+  "homepage": "https://github.com/monumentum/astronode-plugin#readme",
   "devDependencies": {
-    "jest": "^22.1.4",
-    "eslint": "^4.16.0"
+    "coveralls": "^3.0.0",
+    "eslint": "^4.16.0",
+    "jest": "^22.1.4"
   },
   "dependencies": {
     "lodash": "^4.17.4"
