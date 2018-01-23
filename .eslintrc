@@ -18,6 +18,7 @@
         "describe": true,
         "console": true,
         "module": true,
+        "Promise": true,
         "process": true
     },
     "rules": {

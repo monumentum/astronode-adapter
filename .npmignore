@@ -2,7 +2,6 @@ lib/**/*.spec.js
 config.jest.json
 .travis.yml
 .vscode
-README.md
 coverage
 eslintrc
 .gitignore
