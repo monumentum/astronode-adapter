@@ -1,6 +1,6 @@
 {
   "name": "astronode-plugin",
-  "version": "1.1.6",
+  "version": "1.1.8",
   "description": "Module with plugin interfaces and parsers to astronode",
   "main": "index.js",
   "scripts": {
